@@ -53,6 +53,6 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
         with:
-          subject-name: docker.io/darmadevdone/go-githubactions
+          subject-name: docker.io/${{ vars.REGISTRY }}/${{ vars.IMAGE_NAME }}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
