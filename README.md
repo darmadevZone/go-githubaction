@@ -18,3 +18,11 @@
     ${{ secrets.GCP_SA_KEY }}
     ```
     上記を設定をしておく
+
+- GCloud-Runは
+  - GAから参照して、`ghcr`にアクセスする
+    - `deploy-gcloud-run.yaml`を修正する必要がある。
+    - 
+  - Docker hubからあくせすするひつようがある
+    - https://cloud.google.com/artifact-registry/docs/repositories/create-dockerhub-remote-repository?hl=ja
+    - https://zenn.dev/ww24/articles/7891e95f8bfbe4#gar-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90
